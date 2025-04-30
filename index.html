@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📚 Digital Library</h1>
+
+  <div>
+    <input type="text" id="title" placeholder="Book Title">
+    <input type="text" id="author" placeholder="Author">
+    <input type="number" id="year" placeholder="Year Published">
+    <button onclick="addBook()">Add Book</button>
+  </div>
+
+  <div>
+    <input type="text" id="searchTitle" placeholder="Search Title">
+    <button onclick="findBook()">Find Book</button>
+    <button onclick="removeBook()">Remove Book</button>
+  </div>
+
+  <div class="book-list" id="bookList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
